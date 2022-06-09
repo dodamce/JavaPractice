@@ -1,0 +1,91 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch CoutBitNum",
+            "request": "launch",
+            "mainClass": "CoutBitNum",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Register",
+            "request": "launch",
+            "mainClass": "Register",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cout9",
+            "request": "launch",
+            "mainClass": "Cout9",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cumulative",
+            "request": "launch",
+            "mainClass": "Cumulative",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Daffodil",
+            "request": "launch",
+            "mainClass": "Daffodil",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Divisor",
+            "request": "launch",
+            "mainClass": "Divisor",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch GuessNum",
+            "request": "launch",
+            "mainClass": "GuessNum",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch JudageAge",
+            "request": "launch",
+            "mainClass": "JudageAge",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "LeapYear",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch Multip",
+            "request": "launch",
+            "mainClass": "Multip",
+            "projectName": "GuessNum_1c4e5215"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeNum",
+            "request": "launch",
+            "mainClass": "PrimeNum",
+            "projectName": "GuessNum_1c4e5215"
+        }
+    ]
+}
