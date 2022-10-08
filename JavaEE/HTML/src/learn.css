@@ -1,0 +1,131 @@
+/* 
+/* 标签选择器 */
+/* p{
+    color: red;
+}  */
+
+/* 类选择器 */
+.bule{
+    color: blue;
+}
+
+/* id选择器 */
+#Test{
+    color: pink;
+}
+
+/* 通配符选择器 */
+
+/* *选择页面上所有标签 一般用来取消默认样式*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+} */
+
+/* 复合选择器 */
+/* 所有ul下的li标签 */
+/* ul>li{ 或者ul li 看li下所有元素 */ */
+    /* color: aquamarine;
+}
+
+
+
+/* 并列选择器 多个选择器使用,分割开 */
+/* ul>li,ol>li{
+    color: red;
+} */
+
+h2{
+    color: black;
+}
+
+/* 鼠标悬停变色 */
+h2:hover{
+    color: red;
+}
+
+/* 鼠标点击变色 */
+h2:active{
+    color: aqua;
+}
+
+.font{
+    /* 字体属性 */
+    font-family: '宋体';
+    font-size: 30px;
+    /* 字体粗细 */
+    font-weight: 400;
+    /* 字体样式 倾斜 */
+    font-style: oblique;
+}
+
+/*文本属性*/
+.text{
+    color: rgb(255, 155, 100);
+    /* rgba是带有透明度的属性 */
+    /* 文本对齐 */
+    text-align: center;
+    /* 文本装饰 */
+    background-color: black;
+
+    /* 圆角矩形 */
+    /* border-radius: 100px; */
+
+    /* 圆形背景首先要设置正方形背景 */
+    width: 500px;
+    height: 500px;
+
+    /* 边框形状 */
+    border-radius: 50%;
+
+    /* 边框 solid是边框样式*/
+    border: 10px red dashed;
+
+    /* 设置边框不会撑大图形尺寸,边框挤压内部 */
+    box-sizing:border-box;
+
+    /* 设置内边距 */
+    padding: 30px;
+
+    /* 设置外边框距离 */
+    margin-bottom: 10px;
+}
+
+  /* 去除链接空格 */
+a{
+    /* 下划线 */
+    text-decoration: none;
+
+    /* 设置块属性 */
+
+    display: block;
+}
+
+body{
+     /* 缩进 */ 
+     text-indent: 2em;
+     /* 行高 */
+
+     line-height: 150px;
+
+     /* background-color: aquamarine; */
+
+     background-image: url(./OIP-C.jfif);
+
+     /* 图片平铺 */
+     background-repeat: no-repeat;
+
+     background-position: center center ;
+
+     /* text-align: center; */
+
+     /* 设置背景图片大小 */
+     background-size: contain;
+
+}
+
+/* body{
+    background-color: rgb(60,60,60);
+    color: aliceblue;
+} */

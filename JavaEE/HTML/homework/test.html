@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one{
+        background-color: black;
+        width: 100px;
+        height: 200px;
+    }
+
+    .two{
+        background-color: red;
+        width: 50px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .parent{
+        /* 宽度和父标签相同 给父元素设置一个属性。dispay*/
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        display: flex;
+        /* 设置弹性布局位置 space-between让元素均匀分布在父布局上*/
+        /* justify-content: space-between;  */
+        justify-content: space-around;
+        /* align-items代表垂直方向格式 */
+        align-items: center;
+    }
+    .a,.b,.c{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+<body>
+    <!-- <div class="one">
+        <div class="two">
+            Hello Word
+        </div>
+    </div> -->
+
+    <!-- 弹性布局 (水平布局，默认垂直布局)-->
+    <div class="parent">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+    </div>
+</body>
+</html>
