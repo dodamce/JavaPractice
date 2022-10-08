@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GuessNum</title>
+    </head>
+    <body>
+        <button id="reset">重新开始猜</button><br>
+        <span>要猜的数字（1-100）: </span>
+        <input type="text">
+
+        <button id="guess">猜</button><br>
+
+        <span>结果：</span><span id="resault"></span><br>
+
+        <span>已经猜测的次数：</span><span id="times">0</span>
+    </body>
+
+    <script>
+        //获取上面的所有元素
+        let reset=document.querySelector('#reset');
+        let input=document.querySelector('input')
+        let guess=document.querySelector('#guess')
+        let resault=document.querySelector('#resault')
+        let times=document.querySelector('#times')
+
+        //生成1-100随机数
+        let randomNum=Math.floor(Math.random()*100)+1
+
+        console.log(randomNum)
+
+        guess.onclick=function(){
+            //读取input内容，转成整数
+
+            if(input.value==""){
+                return
+            }
+            let usrNum=parseInt(input.value)
+
+            if(usrNum<randomNum){
+                resault.innerHTML='猜小了'
+                resault.style.color='red'
+            }
+            else if(usrNum>randomNum){
+                resault.innerHTML='猜大了'
+                resault.style.color='red'
+            }
+            else{
+                resault.innerHTML='猜对了'
+                resault.style.color='green'
+            }
+
+            //更新比较次数
+            let guessTime=parseInt(times.innerHTML)
+            console.log(guessTime)
+            times.innerHTML=guessTime+1
+        }
+
+        reset.onclick=function(){
+            // location控制页面的链接
+            location.reload()
+        }
+    </script>
+</html>

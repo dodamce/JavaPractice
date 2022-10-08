@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>wall</title>
+    </head>
+
+    <style>
+        /* 去除浏览器默认样式 */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 100%;
+        }
+        h3{
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 24px;
+        }
+        p{
+            text-align: center;
+            color: #777;
+            padding: 10px 0px;
+        }
+
+        .row{
+            width: 400px;
+            margin: 0 auto; 
+            height: 50px;
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .row span{
+            width: 100px;
+            font-size: 20px;
+        }
+
+        .row input{
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            text-indent: 0.5em;
+            outline: none;
+        }
+
+        .row #submit{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 40px;
+            margin: 0 auto;
+            border: none;
+            color: black;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        /* 按下提交后反馈 */
+        .row #submit:active{
+            background-color: gray;
+        }
+
+    </style>
+
+    <body>
+        <div class="content">
+            <h3>表白墙</h3> 
+            <p>输入后点击提交,会将信息显示在表格上</p>
+
+            <div class="row">
+                <span>谁: </span>
+                <input type="text">
+            </div>
+
+            <div class="row">
+                <span>对谁: </span>
+                <input type="text">
+            </div>
+
+            <div class="row">
+                <span>说: </span>
+                <input type="text">
+            </div>
+            
+        </div>
+
+        <div class="row" >
+            <button id="submit">提交</button>
+        </div>
+
+        <script>
+            let submit=document.querySelector('#submit')
+            submit.onclick=function(){
+                let msg=document.querySelectorAll('input')
+                let from =msg[0].value
+                let to=msg[1].value
+                let speck=msg[2].value
+
+                if(from==''||to==''||speck==''){
+                    return
+                }
+
+                //提交新的div
+                let newDiv=document.createElement('div')
+
+                newDiv.innerHTML=from+'对'+to+'说'+speck
+
+                newDiv.className='row'
+
+                let content=document.querySelector('.content')
+                content.appendChild(newDiv)
+
+                //清空输入框内容
+                for(let i=0;i<msg.length;i++){
+                    msg[i].value=''
+                }
+            
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="checkbox" id="all">全选 <br>
+        <input type="checkbox" class="food">面条 <br>
+        <input type="checkbox" class="food">馒头 <br>
+        <input type="checkbox" class="food">炸鸡<br>
+
+        <script>
+            //获取全部元素
+            let all=document.querySelector('#all')
+
+            //获取全部食物
+            let foods=document.querySelectorAll('.food')
+
+            //注册点击事件
+            all.onclick=function(){
+                for(let i=0;i<foods.length;i++){
+                    foods[i].checked=all.checked
+                }
+            }
+
+            //如果有一个没有选上，全选框就会取消。向所有框注册点击事件
+            for(let i=0;i<foods.length;i++){
+                foods[i].onclick=function(){
+                    all.checked=checkFood(foods)
+                }
+            }
+
+
+            function checkFood(foods){
+                //判断是不是所有的框都被选中
+                for(let i=0;i<foods.length;i++){
+                    if(!foods[i].checked){
+                        return ""
+                    }
+                }
+                return "checked"
+            }
+        </script>
+    </body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="font-size: 20px">文本</div>
+
+        <script>
+            let div=document.querySelector("div")
+            div.onclick=function(){
+                //获取当前字体大小
+                let size=parseInt(div.style.fontSize)
+                //扩大字体大小
+                size+=5
+                div.style.fontSize=size+"px"
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+        .day{
+            background-color: pink;
+            color: black;
+        }
+        .night{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <body>
+        <div class="day" style="height:500px">hello JavaScript</div>
+
+        <button>夜间模式</button>
+        
+        <script>
+            let div=document.querySelector('div')
+            let but=document.querySelector('button')
+            but.onclick=function(){
+                if(div.className=='day'){
+                    div.className='night'
+                    but.innerHTML='日间模式'
+                }else if(div.className=='night'){
+                    div.className='day'
+                    but.innerHTML='夜间模式'
+                }
+            }
+        </script>
+    </body>
+
+</html>

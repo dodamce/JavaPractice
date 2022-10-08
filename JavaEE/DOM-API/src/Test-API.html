@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <button>按钮</button>
+        <script>
+            let but=document.querySelector('button')
+
+            but.onclick=function(){
+                alert('hello js')
+            }
+        </script>
+    </body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="screen">
+            <ul>
+                <li>123</li>
+                <li>456</li>
+            </ul>
+        </div>
+
+        <button id="submit">这是一个按钮</button>
+
+        <button id="button">这是修改后的按钮</button>
+
+        <script>
+            let but=document.querySelector('#submit')
+            but.onclick=function(){
+                let screen=document.querySelector('.screen')
+                console.log(screen.innerHTML)
+            }
+
+            let but2=document.querySelector('#button')
+            but2.onclick=function(){
+                let screen=document.querySelector('.screen')
+                screen.innerHTML='<h1>修改后的标题</h1>'
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" class="input" value="0">
+
+        <button id="button">+</button>
+
+        <script>
+            let but=document.querySelector('#button')
+            but.onclick=function(){
+                let input=document.querySelector('.input')
+                
+                let val=input.value
+
+                val=parseInt(val)
+                console.log(typeof(val))
+
+                val+=1
+                input.value=val
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="pic1281.jpg" alt="风景1">
+
+        <script>
+            let img=document.querySelector('img')
+            img.onclick=function(){
+                console.log(img.src)
+                if(img.src.indexOf('pic1281.jpg')>=0){
+                    img.src='pic1874.jpg'
+                }else if(img.src.includes('pic1874.jpg')>=0){
+                    img.src='pic1281.jpg'
+                }
+            }
+        </script>
+    </body>
+</html>
