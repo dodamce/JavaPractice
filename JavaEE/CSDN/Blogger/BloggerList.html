@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客列表</title>
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/blog.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <!-- logo -->
+        <img src="../src/head.jpg" alt="公司logo">
+        <span>NUC-Dodamce博客</span>
+
+        <div class="spacer"></div>
+        <a href="BloggerList.html">主页</a>
+        <a href="BloggerEdit.html">写博客</a>
+        <a href="#">注销</a>
+    </div>
+
+    <div class="container">
+        <!-- 左侧个人信息 -->
+        <div class="left">
+            <!-- 用户信息 -->
+            <div class="card">
+                <img src="../src/R-C.png" alt="头像">
+                <h3></h3>
+
+                <a href="#">Github地址</a>
+
+                <div class="counter">
+                    <span>文章</span>
+                    <span>分类</span>
+                </div>
+                <div class="counter">
+                    <span>2</span>
+                    <span>1</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- 检查登录状态 -->
+    <script src="./blogJs/log.js"></script>
+
+    <script>
+        function getBlogList() {
+            $.ajax({
+                type: "GET",
+                url: "/blogSystem/blog",
+                success: function (body) {
+                    //body就是个json数组,每个元素就是json数组,数组每个元素是json也就是js对象
+                    let rightDiv = document.querySelector(".right");
+                    rightDiv.innerHTML = "";//将原来测试的div代码清空
+                    for (let blog of body) {
+                        let blogDiv = document.createElement("div");
+                        blogDiv.className = "blog";
+
+                        //向blogDiv中添加子元素，最后将blogDiv添加到rightDiv上
+                        let titleDiv = document.createElement("div");
+                        titleDiv.className = "title";
+                        titleDiv.innerHTML = blog.title;
+                        blogDiv.appendChild(titleDiv);
+
+                        //构造发布时间
+                        let dataDiv = document.createElement("div");
+                        dataDiv.className = "data";
+                        dataDiv.innerHTML = blog.postTime;
+                        blogDiv.appendChild(dataDiv);
+
+                        //构造博客摘要
+                        let contentDiv = document.createElement("div");
+                        contentDiv.className = "static";
+                        contentDiv.innerHTML = blog.content;
+                        blogDiv.appendChild(contentDiv);
+
+                        //构造查看全文连接
+                        let href = document.createElement("a");
+                        href.innerHTML = "查看全文 &gt;&gt;";
+                        href.href = "BloggerDetile.html?blogId=" + blog.blogId;
+                        blogDiv.appendChild(href);
+
+                        rightDiv.appendChild(blogDiv);
+                    }
+                },
+                error: function () {
+                    alert("获取博客列表失败");
+                }
+            });
+        }
+        getBlogList();
+    </script>
+</body>
+
+</html>

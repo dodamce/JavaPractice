@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="center">Hello word</div>
+
+        <button>删除 new div</button>
+
+    </body>
+    <script>
+        //创建新的div标签
+        let newDiv=document.createElement('div')
+        newDiv.id='new'
+        newDiv.innerHTML='hello new div'
+        newDiv.className='newDivs'
+
+        console.log(newDiv)
+
+        //挂到DOM树上
+        let center=document.querySelector('.center')
+        center.appendChild(newDiv)
+
+        let btn=document.querySelector('button')
+
+        btn.onclick=function(){
+            center.removeChild(newDiv)
+        }
+    </script>
+</html>

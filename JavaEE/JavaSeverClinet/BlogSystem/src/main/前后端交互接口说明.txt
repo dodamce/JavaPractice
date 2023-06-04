@@ -1,0 +1,110 @@
+博客列表页 BloggerList.html:
+    展示数据库中的所有博客列表
+
+请求:
+GET /blogSystem/blog
+
+响应:
+[
+    {
+        blogId:1,
+        title:'xxxx',
+        content: 'xxx', //正文摘要
+        userId: 2,
+        postTime: '2020...',
+    },
+    {
+        blogId:2,
+        title:'xxxx',
+        content: 'xxx',
+        userId: 2,
+        postTime: '2020...',
+    },
+    ......
+]
+
+----------------------------------------------------------------
+
+博客详情页 BloggerDetile.html:
+    根据博客id展示博客的详情
+
+请求:
+GET /blogSystem/blog?blogId=1
+
+响应:
+HTTP/1.1 200 OK
+Content-Type: application/json;
+
+{
+    blogId = "xxx",
+    title = "xxx",
+    content = "xxx",//不再出现截断，直接获取到全文
+    userId ="xxx",
+    postTime = "xxx",
+}
+
+----------------------------------------------------------------
+
+博客登录页 BloggerLog.html
+
+请求:
+POST /blogSystem/log
+Content-Type: application/x-www-form-urlencoded //使用form表单提交
+
+响应：
+HTTP/1.0 302
+Location: BloggerList.html
+
+username="xxxx"&password="xxxx"
+
+----------------------------------------------------------------
+
+检查登录状态，如果没有登录不能访问主页
+
+请求:
+GET /blogSystem/log
+
+响应:
+HTTP/1.0 200 OK
+Content-Type: application/json
+
+{
+    {
+        userId:"xxxx",
+        username:"xxxx",
+    }
+}
+
+如果用户未登录，返回的userId为0
+{
+    {
+        userId:"0",
+        username:"",
+    }
+}
+
+----------------------------------------------------------------
+
+博客详情页动态显示作者信息，登录后显示用户信息
+客户端向服务器发送blogID,服务器根据这个ID返回博客作者等信息，这些信息由前端组织
+
+请求：
+GET /blogSystem/authorInfo?blogId=x
+
+响应：
+{
+    userId:x,
+    username:x,
+}
+
+----------------------------------------------------------------
+
+注销用户,注销成功后强制跳转到登录页面
+
+请求:
+GET /blogSystem/logout
+
+响应:
+HTTP/1.1 302
+Location: BloggerLog.html
+

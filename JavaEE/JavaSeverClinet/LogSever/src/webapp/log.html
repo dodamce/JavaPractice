@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+
+<style>
+    .log {
+        width: 100%;
+        height: calc(100% - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logdiv {
+        width: 350px;
+        height: 350px;
+        /* background:  red; */
+        background-color: rgba(245, 227, 227, 0.8);
+        border-radius: 10px;
+    }
+
+    .logdiv .row {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logdiv .row span {
+        display: block;
+
+        width: 70px;
+
+        font-weight: 700;
+    }
+
+    .logdiv h3 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="log">
+        <div class="logdiv">
+            <h3>登录</h3>
+            <form action="login" method="post">
+                <div class="row">
+                    <span>用户名：</span>
+                    <input type="text" name="username"><br>
+                </div>
+                <div class="row">
+                    <span>密码：</span>
+                    <input type="password" name="password"><br>
+                </div>
+                <div class="row" id="sub"><input type="submit" value="登录"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
