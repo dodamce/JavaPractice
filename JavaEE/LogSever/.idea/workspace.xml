@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6faf2c45-922d-4c12-a5e8-8f69d07a67d0" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../CSDN/CSDN.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DOM-API/DOM-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File类/src/Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML/HTML.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaScript练习/JavaScript练习.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/src/main/java/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/src/main/java/ServletPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/src/main/webapp/POST.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/java/PostJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/java/PostParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/java/ServletPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/java/ShowRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/java/TestGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServletPost/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Socket/src/Client/UdpEchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Socket/src/Sever/DictUdp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Socket/src/Sever/UdpEchoSever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/SocketTcp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/src/Client/TcpEchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketTcp/src/Sever/TcpEchoSever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketUdp/Socket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestManven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestManven/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestManven/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestManven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSwing/TestSwing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSwing/src/FirstSwing/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSwing/src/mysql-connector-java-5.1.49.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSwing/src/登录测试/MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestSwing/src/登录测试/log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/src/main/java/javaSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/src/main/java/message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WallPaper/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/InnerClass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/InnerClass/src/InnerClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/stack/stack.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2GAG5wx8Y2SQAyLLxfJk80ApTSS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServletPost" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TOMCAT" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="" />
+      <option name="docBase" value="D:\apache-tomcat-8.5.82" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.82" />
+          <option name="path" value="D:/apache-tomcat-8.5.82" />
+          <option name="version" value="8.5.82.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="6faf2c45-922d-4c12-a5e8-8f69d07a67d0" name="默认变更列表" comment="" />
+      <created>1665823795578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665823795578</updated>
+      <workItem from="1665823796817" duration="220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
