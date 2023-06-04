@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db7416df-1a44-49ee-a005-a422712b30ef" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../泛型/src/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../泛型/泛型.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/Heap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Heap/src/TestHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/MapSet/MapSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/MapSet/src/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/SortJava/SortJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/SortJava/src/JavaSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/SortJava/src/TestSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Stack_Queue/stack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/Tree/Tree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/src/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/src/TestBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据结构/二叉搜索树/二叉搜索树.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2B0Ir9Rfunux2mpfbJlQEeBfGLQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="InnerClassTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InnerClassTest" />
+      <module name="InnerClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.InnerClassTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="db7416df-1a44-49ee-a005-a422712b30ef" name="变更" comment="" />
+      <created>1656036774713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656036774713</updated>
+      <workItem from="1656036776234" duration="2234000" />
+      <workItem from="1656039333508" duration="1477000" />
+      <workItem from="1656044705407" duration="16000" />
+      <workItem from="1656419870455" duration="471000" />
+      <workItem from="1656420370023" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

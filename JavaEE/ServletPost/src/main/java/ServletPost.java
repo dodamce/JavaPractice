@@ -10,6 +10,7 @@ public class ServletPost extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doPost(req, resp);
+        resp.setContentType("POST/html; charset=utf8");
         resp.getWriter().write("POST 响应");
     }
 }

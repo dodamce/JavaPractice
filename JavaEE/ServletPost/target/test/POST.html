@@ -12,7 +12,13 @@
         <!-- 引入cdn -->
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script>
-            
+            $.ajax({
+                type:'post',
+                url:'method',
+                success: function(body){
+                    console.log(body);
+                }
+            });
         </script>
     </body>
 </html>

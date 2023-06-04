@@ -2,134 +2,172 @@
 <html lang="cn">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>wall</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wall</title>
 </head>
 
 <style>
-  /* 去除浏览器默认样式 */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    /* 去除浏览器默认样式 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-  .content {
-    width: 100%;
-  }
+    .content {
+        width: 100%;
+    }
 
-  h3 {
-    text-align: center;
-    padding: 20px 0px;
-    font-size: 24px;
-  }
+    h3 {
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 24px;
+    }
 
-  p {
-    text-align: center;
-    color: #777;
-    padding: 10px 0px;
-  }
+    p {
+        text-align: center;
+        color: #777;
+        padding: 10px 0px;
+    }
 
-  .row {
-    width: 400px;
-    margin: 0 auto;
-    height: 50px;
+    .row {
+        width: 400px;
+        margin: 0 auto;
+        height: 50px;
 
-    display: flex;
-    justify-items: center;
-    align-items: center;
+        display: flex;
+        justify-items: center;
+        align-items: center;
 
-  }
+    }
 
-  .row span {
-    width: 100px;
-    font-size: 20px;
-  }
+    .row span {
+        width: 100px;
+        font-size: 20px;
+    }
 
-  .row input {
-    width: 300px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    text-indent: 0.5em;
-    outline: none;
-  }
+    .row input {
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-indent: 0.5em;
+        outline: none;
+    }
 
-  .row #submit {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 40px;
-    margin: 0 auto;
-    border: none;
-    color: black;
-    background-color: pink;
-    border-radius: 10px;
-  }
+    .row #submit {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 40px;
+        margin: 0 auto;
+        border: none;
+        color: black;
+        background-color: pink;
+        border-radius: 10px;
+    }
 
-  /* 按下提交后反馈 */
-  .row #submit:active {
-    background-color: gray;
-  }
+    /* 按下提交后反馈 */
+    .row #submit:active {
+        background-color: gray;
+    }
 </style>
 
 <body>
-  <div class="content">
+<div class="content">
     <h3>表白墙</h3>
     <p>输入后点击提交,会将信息显示在表格上</p>
 
     <div class="row">
-      <span>谁: </span>
-      <input type="text">
+        <span>谁: </span>
+        <input type="text">
     </div>
 
     <div class="row">
-      <span>对谁: </span>
-      <input type="text">
+        <span>对谁: </span>
+        <input type="text">
     </div>
 
     <div class="row">
-      <span>说: </span>
-      <input type="text">
+        <span>说: </span>
+        <input type="text">
     </div>
 
-  </div>
+</div>
 
-  <div class="row">
+<div class="row">
     <button id="submit">提交</button>
-  </div>
+</div>
 
-  <script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    function getMessage() {
+        $.ajax({
+            type: "get",
+            url: "TestServe",
+            success: function (body) {
+                //body中的Json字符串已经被JS处理为JS对象
+                for (let message of body) {
+                    //提交新的div
+                    let newDiv = document.createElement('div')
+                    newDiv.innerHTML = message.from + '对' + message.to + '说' + message.speck
+                    newDiv.className = 'row'
+                    let content = document.querySelector('.content')
+                    content.appendChild(newDiv)
+                }
+
+                console.log(body)
+            }
+        })
+    }
+
+    getMessage();
+
     let submit = document.querySelector('#submit')
     submit.onclick = function () {
-      let msg = document.querySelectorAll('input')
-      let from = msg[0].value
-      let to = msg[1].value
-      let speck = msg[2].value
+        let msg = document.querySelectorAll('input')
+        let from = msg[0].value
+        let to = msg[1].value
+        let speck = msg[2].value
 
-      if (from == '' || to == '' || speck == '') {
-        return
-      }
+        if (from === '' || to === '' || speck === '') {
+            return
+        }
 
-      //提交新的div
-      let newDiv = document.createElement('div')
+        //提交新的div
+        let newDiv = document.createElement('div')
+        newDiv.innerHTML = from + '对' + to + '说' + speck
+        newDiv.className = 'row'
+        let content = document.querySelector('.content')
+        content.appendChild(newDiv)
 
-      newDiv.innerHTML = from + '对' + to + '说' + speck
+        //清空输入框内容
+        for (let i = 0; i < msg.length; i++) {
+            msg[i].value = ''
+        }
 
-      newDiv.className = 'row'
-
-      let content = document.querySelector('.content')
-      content.appendChild(newDiv)
-
-      //清空输入框内容
-      for (let i = 0; i < msg.length; i++) {
-        msg[i].value = ''
-      }
-
+        //内容发送给服务器
+        let body = {
+            "from": from,
+            "to": to,
+            "speck": speck
+        }
+        $.ajax({
+            type: "post",
+            url: "TestServe",
+            conditionType: "application/json;charset=utf8",
+            data: JSON.stringify(body),
+            success: function (body) {
+                alert("消息提交服务器成功")
+            },
+            error: function (body) {
+                alert("消息提交失败")
+            }
+        })
     }
-  </script>
+</script>
 </body>
 
 </html>
